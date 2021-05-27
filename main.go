@@ -17,7 +17,9 @@ func main(){
 	for _, d := range f.Decls {
 		switch d := d.(type){
 		case *ast.FuncDecl:
-			fmt.Println(d.Name)
+			if d.Recv == nil {
+				fmt.Println(d.Name)
+			}
 		}
 	}
 }

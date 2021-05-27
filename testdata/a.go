@@ -21,3 +21,11 @@ func a_call1(){
 func b_call1(){
 	fmt.Println("call method")
 }
+
+type C struct{
+
+}
+
+func (c C) c_call(){
+	fmt.Println("call c_call method")
+}
